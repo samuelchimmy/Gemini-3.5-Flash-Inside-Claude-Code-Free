@@ -252,10 +252,13 @@ cat > ~/.claude-code-router/config.json << 'EOF'
   ],
   "Router": {
     "default": "gemini,gemini-3.5-flash",
-    "background": "gemini,gemini-3.1-flash-lite",
+    "background": "gemini,gemini-3.1-flash-lite", 
     "think": "gemini,gemini-3.5-flash",
     "longContext": "gemini,gemini-3.5-flash",
-    "longContextThreshold": 60000
+    "longContextThreshold": 60000,
+    "claude-3-5-sonnet": "gemini,gemini-3.5-flash",
+    "claude-3-5-haiku": "gemini,gemini-3.1-flash-lite",
+    "claude-3-7-sonnet": "gemini,gemini-3.5-flash"
   }
 }
 EOF
